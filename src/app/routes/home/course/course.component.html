@@ -1,0 +1,14 @@
+<a routerLink="/ccontent/{{course.modulecode}}">
+<div class="course" [highlight]="course.price">
+   <h3>{{course.modulename | uppercase}}</h3>
+   <div id="image">
+      <img src="http://localhost:8894/rest-api/images/{{course.filename}}"> 
+   </div>
+   <h4>{{course.description}}</h4>
+   <h3>Price: {{course.price | currency:'INR' }}</h3>
+   <h6 [style.color]="'green'" [style.textAlign]="'center'">
+      {{course.price | offer}}
+   </h6>
+   <h5>Duration: {{course.duration}} hours</h5>
+</div>
+</a>

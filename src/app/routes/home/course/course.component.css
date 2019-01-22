@@ -1,0 +1,45 @@
+.course{
+    background-color: white;
+    width: 300px;
+    min-height: 450px;
+    margin: 20px;
+    float: left;
+}
+
+h3{
+    font-family: Arial;
+    color: darkblue;
+    text-align: center;
+}
+
+#image{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+#image img{
+    height: 95%;
+    width: 95%;
+    margin: 10px;
+}
+
+h4{
+    color: gray;
+    font-family: agency FB;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h3{
+    color: darkred;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h5{
+    margin-top: 10px;
+    text-align: center;
+    font-family: arial;
+}

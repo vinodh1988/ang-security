@@ -1,0 +1,40 @@
+.main img{
+    height: 20px;
+    width:20px;
+    cursor: pointer;
+}
+
+.main li{
+    list-style-type:none;
+    
+}
+
+.sub{
+    background-color: #FCFAFA;
+    width: 60%;
+    margin-top: 0px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.sub li{
+    list-style-type: none;
+    font-family: arial narrow;
+}
+
+.sub img{
+    height: 12px;
+    width: 12px;
+    margin: 3px;
+}
+.cbox{
+    background-color: #4D3939;
+    width: 60%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px dashed #DF4646;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight:bold;
+    font-family: arial narrow;
+}

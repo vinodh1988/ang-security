@@ -1,0 +1,22 @@
+<h1 [style.color]="'darkblue'">
+  {{module.modulename}}</h1>
+<h3>Duration {{module.duration}} hours</h3>
+
+<h5 [style.color]="'darkred'">Course Contents</h5>
+
+<ul class="main">
+    <li *ngFor="let x=index;let n of module.topic">
+     <div class="cbox"> 
+        {{n.topic}}
+     <img src="../../assets/images/{{n.expand}}.png" align="right"
+     (click)="toggleValue(x)">
+       </div>
+          <ul class="sub" *ngIf="n.status">
+              <li *ngFor="let m of n.subTopic">
+  <img src="../../assets/images/tick.png" >
+                  
+               {{m.topic}}
+              </li>
+          </ul>
+    </li>
+ </ul>

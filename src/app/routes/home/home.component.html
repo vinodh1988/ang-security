@@ -1,0 +1,22 @@
+
+<ag-grid-angular 
+    style="width: 1000px; min-height: 500px;" 
+    class="ag-theme-balham"
+    [rowData]="courselist"
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular>
+
+
+<select  [(ngModel)]="coursetype">
+    <option>High Price</option>
+    <option>Moderate Price</option>
+    <option>Low Price</option>
+    <option>All Courses</option>
+</select> 
+<br>
+<app-course *ngFor="let x of courselist|priceFilter:coursetype" [current]="x">
+    
+</app-course>
+
+
